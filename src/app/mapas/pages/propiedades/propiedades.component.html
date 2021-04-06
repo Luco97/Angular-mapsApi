@@ -14,7 +14,8 @@
             <div    class="col-4 mb-2"
                     *ngFor="let item of propiedades">
                 <div class="card">
-                    <img src="..." class="card-img-top">
+                    <app-minimapa [coordenadas]="item.lngLat"></app-minimapa>
+                    <img class="card-img-top">
                     <div class="card-body">
                         <h5 class="card-title">{{item.titulo}}</h5>
                         <p class="card-text">{{item.descripcion}}</p>
